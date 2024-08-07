@@ -1,0 +1,17 @@
+[
+    {
+        "email": "contoh@email.com",
+        "password": "password123",
+        "profile": {
+            "id": 1,
+            "nama": "Contoh Nama",
+            "pekerjaan": "Pekerjaan",
+            "alamat": "Alamat",
+            "nomorHP": "081234567890",
+            "email": "contoh@email.com"
+        },
+        "transactions": [
+          
+        ]
+    }
+]

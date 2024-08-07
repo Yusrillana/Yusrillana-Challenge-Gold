@@ -1,47 +1,18 @@
-// script.js
-
-const expenseForm = document.getElementById('expense-form');
-const expenseNameInput = document.getElementById('expense-name');
-const expenseAmountInput = document.getElementById('expense-amount');
-const expenseList = document.getElementById('expense-list');
-const totalAmount = document.getElementById('total-amount');
-
-let expenses = [];
-
-expenseForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = expenseNameInput.value;
-    const amount = parseFloat(expenseAmountInput.value);
-
-    if (name && amount) {
-        expenses.push({ name, amount });
-        updateExpenseList();
-        updateTotalAmount();
-        expenseNameInput.value = '';
-        expenseAmountInput.value = '';
-    }
+// Logika validasi login
+document.getElementById('login-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    // ... ambil data dari formulir (nomor telepon)
+    // ... validasi nomor telepon
+    // ... jika valid, redirect ke dashboard.html
 });
 
-function updateExpenseList() {
-    expenseList.innerHTML = '';
-    expenses.forEach((expense, index) => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${expense.name}</td>
-            <td>$${expense.amount.toFixed(2)}</td>
-            <td><button onclick="deleteExpense(${index})">Hapus</button></td>
-        `;
-        expenseList.appendChild(row);
-    });
-}
+// Logika untuk menampilkan/menyembunyikan modal formulir transaksi
+document.getElementById('add-transaction').addEventListener('click', () => {
+    // ... tampilkan modal transaction-form.html
+});
 
-function updateTotalAmount() {
-    const total = expenses.reduce((acc, expense) => acc + expense.amount, 0);
-    totalAmount.textContent = total.toFixed(2);
-}
+// ... (logika lainnya sesuai fitur aplikasi)
 
-function deleteExpense(index) {
-    expenses.splice(index, 1);
-    updateExpenseList();
-    updateTotalAmount();
-}
+// Gunakan financial-utils.js
+import { isBudgetBalanced } from './utils/financial-utils.js';
+// ...
