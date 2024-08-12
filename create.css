@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #2B99FF , #1A5C99);
+}
+
+.container {
+  width: 85%;
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* To ensure the image overlay stays within the container */
+}
+
+.left-side {
+  width: 60%;
+  position: relative; /* For positioning the image overlay */
+}
+
+.left-side img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.logo img{
+  position: relative;
+  width: 120px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.right-side {
+  width: 30%;
+  padding: 40px;
+  display: fle;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border:   
+3px solid #000000;
+  border-radius: 5px;
+
+}
+
+button[type="submit"] {
+  background-color: #FF8F00;
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.separator span {
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.google-signup {
+  background-color: #fff;
+  color: #333;
+  margin-left: 10px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.google-signup img {
+  margin-right: 5px;
+  width: 35px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}

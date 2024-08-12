@@ -56,8 +56,10 @@ ___________________________________
 Struktur data 
 
 Yusrillana-Challenge_Gold/
-├── index.html          (Halaman utama/login)
-├── dashboard.html      (Halaman dasbor/pengelolaan keuangan)
+├── login.html          (Halaman utama/login)
+├── Create.html         (Halaman utama/Daftar)
+├── Form.html           (Halaman Form master Data)
+├── Dasboard.html       (Halaman dasbor/pengelolaan keuangan)
 ├── style.css           (Gaya CSS untuk seluruh aplikasi)
 ├── script.js           (Logika JavaScript utama)
 ├── assets/

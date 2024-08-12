@@ -3,38 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVING - Dashboard</title>   
-
-    <link rel="stylesheet" href="style.css">
+    <title>Saving - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
-        </header>
 
-    <main>
-        <section class="overview-section">
-            <h2>Ringkasan Keuangan</h2>
-            </section>
-
-        <section class="transactions-section">
-            <h2>Transaksi</h2>
-            <button id="add-transaction">Tambah Transaksi</button>
-            <div id="transaction-list">
+        <div class="container">
+            <div class="add-sections">
+                <div class="add-expense">
+                    <h3 class="section-title">+ Add Expense</h3>
+                    <input type="number" placeholder="Amount">
+                    <input type="text" placeholder="Notes">
+                    <div class="payment-type">
+                        <label>
+                            <input type="radio" name="payment-method-expense" value="cash"> Cash
+                        </label>
+                        <label>
+                            <input type="radio" name="payment-method-expense" value="cashless"> Cashless
+                        </label>
+                    </div>
+                    <div class="expense-type">
+                        <label>
+                            <input type="radio" name="expense-type" value="needs"> Needs
+                        </label>
+                        <label>
+                            <input type="radio" name="expense-type" value="wants"> Wants
+                        </label>
+                        <label>
+                            <input type="radio" name="expense-type" value="savings"> Savings
+                        </label>
+                    </div>
+                    <button>Submit</button>
                 </div>
-        </section>
 
-        <section class="management-section">
-            <h2>Manajemen Keuangan</h2>
-            </section>
+                <div class="add-money-in">
+                    <h3 class="section-title">+ Add Money In</h3>
+                    <input type="number" placeholder="Amount">
+                    <input type="text" placeholder="Notes">
+                    <div class="payment-type">
+                        <label>
+                            <input type="radio" name="payment-method-income" value="cash"> Cash
+                        </label>
+                        <label>
+                            <input type="radio" name="payment-method-income" value="cashless"> Cashless
+                        </label>
+                    </div>
+                    <button>Submit</button>
+                </div>
+            </div>
 
-        <section class="achievement-section">
-            <h2>Pencapaian</h2>
-            </section>
-    </main>
-
-    <footer>
-        </footer>
-
-    <script src="script.js"></script>
+            <div class="current-finances">
+                <h2 class="section-title">Your Current Finances</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Payment</th>
+                            <th>Type</th>
+                            <th>Notes</th>
+                            <th>Add</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2.500.000</td>
+                            <td>1/8/24</td>
+                            <td>Cashless</td>
+                            <td>-</td>
+                            <td>Gaji Bulan Juli</td>
+                            <td>Income</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>500.000</td>
+                            <td>2/8/24</td>
+                            <td>Cashless</td>
+                            <td>Needs</td>
+                            <td>Beli Charger Laptop</td>
+                            <td>Expenses</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>150.000</td>
+                            <td>3/8/24</td>
+                            <td>Cash</td>
+                            <td>Wants</td>
+                            <td>Beli Mainan Baru</td>
+                            <td>Expenses</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>700.000</td>
+                            <td>4/8/24</td>
+                            <td>Cashless</td>
+                            <td>Saving</td>
+                            <td>Tabungan BCA</td>
+                            <td>Expenses</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
 </body>
 </html>
+
