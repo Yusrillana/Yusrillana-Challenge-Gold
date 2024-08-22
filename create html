@@ -50,22 +50,6 @@
             <p class="login-link">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
-    <script>
-
-document.getElementById('signup-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    const fullName = document.getElementById('full-name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;   
-
-    
-
-
-
-
-});
-
-
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
